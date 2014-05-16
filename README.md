@@ -2,7 +2,7 @@
 
 ### Tema do Terminal
 
-![Tema IR_Black - Terminal](http://f.cl.ly/items/3Z2V2v2P1m0v2p3M3K3W/Tema%20IR_Black%20-%20Terminal.png)
+![Tema IR_Black](http://f.cl.ly/items/2W0T1d2s3N3s251N221d/Terminal%20IR_Black.png)
 
 Para deixar as cores do terminal mais legíveis [baixe o tema IR_Black](IR_Black.terminal) e instale-o
 clicando duas vezes no arquivo. Caso prefira, existem muitos outros disponíveis pela internet.
