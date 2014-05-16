@@ -2,7 +2,7 @@
 
 ### Tema do Terminal
 
-[Baixe e instale o tema IR_Black](IR_Black.terminal) com cores mais suaves para o Terminal.
+[Baixe e instale o tema IR_Black](IR_Black.terminal) com cores mais legíveis para o Terminal.
 
 Depois, no Terminal, vá em Preferências e selecione o tema na lista de Perfis e defina-o como padrão.
 
