@@ -99,7 +99,7 @@ txtrst='\e[0m'    # Text Reset
 # set up the text display in the prompt. You can edit the colors and the format
 # of the text according to your taste.
 print_before_the_prompt() {
-    printf "\n${txtred}%s${txtblk} at ${txtgrn}%s${txtblk} in ${txtblu}%s${txtblk}$([[ -n $(git branch 2> /dev/null) ]] && echo " on ")${txtylw}$(parse_git_branch)${txtrst}\n" "$USER" "jedi" "${PWD/$HOME/~}"
+    printf "\n${txtred}${USER}${txtblk} at ${txtgrn}$(scutil --get ComputerName)${txtblk} in ${txtblu}${PWD/$HOME/~}${txtblk}$([[ -n $(git branch 2> /dev/null) ]] && echo " on ")${txtylw}$(parse_git_branch)${txtrst}\n"
 }
 PROMPT_COMMAND=print_before_the_prompt
 
