@@ -29,29 +29,29 @@ if tput setaf 1 &> /dev/null; then
     RESET=$(tput sgr0)
 fi
 
-# detects if branch has anything to commit
+# Detects if branch has anything to commit
 function parse_git_dirty() {
     [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "+"
 }
 
-# display git branch name
+# Display git branch name
 function parse_git_branch() {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-# enable ls command colors
+# Enable ls command colors
 export CLICOLOR=1
 
-# actually define the colors
+# Actually define the colors
 export  LSCOLORS=ExFxCxDxBxegedabagacad # original
 #export LSCOLORS=ExFxCxDxBxegedabagcxdx # option #2
 #export LSCOLORS=GxFxCxDxBxegedabagaced # option #3
 
 #
-# color definitions for the prompt
+# Color definitions
 #
 
-# normal colors
+# Normal colors
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
 txtgrn='\e[0;32m' # Green
@@ -61,7 +61,7 @@ txtpur='\e[0;35m' # Purple
 txtcyn='\e[0;36m' # Cyan
 txtwht='\e[0;37m' # White
 
-# bold colors
+# Bold colors
 bldblk='\e[1;30m' # Black - Bold
 bldred='\e[1;31m' # Red
 bldgrn='\e[1;32m' # Green
@@ -71,7 +71,7 @@ bldpur='\e[1;35m' # Purple
 bldcyn='\e[1;36m' # Cyan
 bldwht='\e[1;37m' # White
 
-# underliend colors
+# Underliend colors
 unkblk='\e[4;30m' # Black - Underline
 undred='\e[4;31m' # Red
 undgrn='\e[4;32m' # Green
@@ -81,7 +81,7 @@ undpur='\e[4;35m' # Purple
 undcyn='\e[4;36m' # Cyan
 undwht='\e[4;37m' # White
 
-# backgroudn colors
+# Backgroudn colors
 bakblk='\e[40m'   # Black - Background
 bakred='\e[41m'   # Red
 badgrn='\e[42m'   # Green
@@ -91,19 +91,19 @@ bakpur='\e[45m'   # Purple
 bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 
-# reset colors
+# Reset colors
 txtrst='\e[0m'    # Text Reset
 
 #
-# command line
+# Prompt
 #
 
-# set up the text display in the prompt. You can edit the colors and the format
-# of the text according to your taste.
+# Set up the text display in the prompt.
+# You can edit the colors and the text according to your taste.
 print_before_the_prompt() {
     printf "\n${txtred}${USER}${txtblk} at ${txtgrn}$(scutil --get ComputerName)${txtblk} in ${txtblu}${PWD/$HOME/~}${txtblk}$([[ -n $(git branch 2> /dev/null) ]] && echo " on ")${txtylw}$(parse_git_branch)${txtrst}\n"
 }
 PROMPT_COMMAND=print_before_the_prompt
 
-# string shown in the beggining of the line
+# String shown in the beggining of the line
 PS1="$ "
