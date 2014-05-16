@@ -6,7 +6,7 @@
 
 Depois, no Terminal, vá em Preferências e selecione o tema na lista de Perfis e defina-o como padrão.
 
-### Cores e outras facilidades para o Terminal
+### Cores e outras facilidades
 
 Copie os arquivos abaixo para a pasta do seu usuário. Exemplo: `/Users/fulano`.
 
