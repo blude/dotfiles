@@ -23,3 +23,7 @@ Arquivos incluídos:
 
 Após copiar e salvar os arquivos, digite no Terminal o comando `source ~/.bash_profile` para recarregar
 as configurações feitas.
+
+### Fonte
+
+No exemplo, a fonte usada no Terminal é a Incosolata, tamanho 14. [Clique aqui](http://www.fontsquirrel.com/fonts/Inconsolata) para baixá-la.   
