@@ -33,3 +33,7 @@ No exemplo, a fonte usada no Terminal é a Incosolata, tamanho 14. [Clique aqui]
 
 Baseado nos [dotfiles de Mathias Bynens](https://github.com/mathiasbynens/dotfiles). Se você quer
 customizar ainda mais o seu Terminal, esta é a fonte.
+
+### iTerm 2
+
+Ótima alternativa ao Terminal nativo do Mac. [Download aqui](http://www.iterm2.com/#/section/home).
