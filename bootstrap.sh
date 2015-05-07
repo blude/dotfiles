@@ -15,7 +15,7 @@ brew upgrade
 #brew install moreutils
 #brew install findutils
 #brew install gnu-sed --default-names
-#brew install bash
+brew install bash
 brew install bash-completion
 brew install wget --enable-iri
 brew install git
@@ -30,8 +30,8 @@ brew install webkit2png
 brew install caskroom/cask/brew-cask
 
 # add formulae to homebrew
-#brew tap homebrew/science                       # science
-brew tap caskroom/fonts                         # fonts
+brew tap homebrew/science                      # science
+brew tap caskroom/fonts                        # fonts
 brew tap caskroom/versions
 
 # langs
@@ -51,7 +51,7 @@ brew cask install iterm2 2> /dev/null
 brew cask install virtualbox 2> /dev/null
 brew cask install livereload 2> /dev/null
 brew cask install sublime-text3 2> /dev/null
-brew cask install dropbox 2> /dev/null
+brew cask install xquartz 2> /dev/null
 
 # apps
 brew cask install caffeine 2> /dev/null
@@ -60,6 +60,13 @@ brew cask install zipeg 2> /dev/null
 brew cask install shiftit 2> /dev/null
 brew cask install transmission 2> /dev/null
 brew cask install skitch 2> /dev/null
+brew cask install dropbox 2> /dev/null
+brew cask install axure-rp-pro 2> /dev/null
+brew cask install skype 2> /dev/null
+brew cask install slack 2> /dev/null
+brew cask install spotify 2> /dev/null
+brew cask install things 2> /dev/null
+brew cask install flash-player 2> /dev/null
 
 # quick look
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
@@ -74,7 +81,7 @@ npm install -g less
 npm install -g fuck-you
 
 # oh-my-zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # copy Sublime Text user configuration
 # ...
